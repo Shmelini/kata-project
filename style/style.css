@@ -343,6 +343,7 @@ main {
 
     .services__list {
         flex-wrap: wrap;
+        overflow-y: auto;
     }
 
     .services__list-item {
