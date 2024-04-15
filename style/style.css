@@ -310,7 +310,6 @@ main {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 24px;
-        padding-right: 34px;
     }
 
     .title {
@@ -354,6 +353,7 @@ main {
     .services__tab {
         align-items: start;
         justify-content: space-between;
+        gap: 34px;
     }
 
     .services__tab-text {
