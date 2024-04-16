@@ -36,7 +36,7 @@ a {
     text-decoration: none;
 }
 
-main {
+.main {
     padding-top: 24px;
 }
 
@@ -126,7 +126,7 @@ main {
     height: 20px;
 }
 
-.services__head {
+.services__links-group {
     display: none;
 }
 
@@ -191,7 +191,6 @@ main {
     .services__list {
         display: flex;
         overflow-y: scroll;
-        margin-bottom: 24px;
     }
 
     .services__list-item {
@@ -201,6 +200,7 @@ main {
     .blur-block {
         position: relative;
         margin: 0 16px;
+        margin-bottom: 24px;
         display: flex;
         justify-content: center;
     }
@@ -264,6 +264,7 @@ main {
     }
 
     .services__content {
+        gap: 32px;
         padding: 0 24px;
     }
 
@@ -272,10 +273,6 @@ main {
         margin: 0;
         display: flex;
         justify-content: center;
-    }
-
-    .services__list {
-        margin-bottom: 40px;
     }
 
     .services__tab {
@@ -304,12 +301,26 @@ main {
 }
 
 @media (min-width: 1120px) {
+    .main {
+        padding-top: 42px;
+    }
+
+    .container {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: none;
+    }
+
     .services__head {
         display: block;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 24px;
+        padding-bottom: 24px;
+        padding-right: 34px;
     }
 
     .title {
@@ -330,6 +341,7 @@ main {
     }
 
     .services__content {
+        gap: 7px;
         padding: 0 34px 49px 34px;
     }
 
@@ -357,8 +369,8 @@ main {
     }
 
     .services__tab-text {
-        margin-right: 36px;
-        margin-bottom: 14px;
+        margin-top: 9px;
+        margin-bottom: 0;
     }
 
     .services__tab-img {
