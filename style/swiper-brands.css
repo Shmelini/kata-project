@@ -91,7 +91,7 @@
 
     .swiper-brands__swiper-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 224px);
         gap: 16px 24px;
     }
 
@@ -129,6 +129,13 @@
 }
 
 @media (min-width: 1024px) {
+    .swiper-brands__swiper-wrapper {
+        grid-template-columns: repeat(4, 224px);
+        gap: 16px 24px;
+    }
+}
+
+@media (min-width: 1120px) {
     .title-container {
         padding: 16px 32px;
     }
@@ -138,7 +145,7 @@
     }
 
     .swiper-brands__swiper-wrapper {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, 240px);
         gap: 16px 32px;
     }
 
