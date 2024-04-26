@@ -71,6 +71,7 @@
         height: 40px;
         border: 2px solid #FF3E79;
         border-radius: 100%;
+        background: none;
         transition: opacity 0.2s;
     }
 
