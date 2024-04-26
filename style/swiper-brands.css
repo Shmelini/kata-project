@@ -11,8 +11,6 @@
     display: none;
 }
 
-
-
 @media (min-width: 320px) {
     .title-container {
         padding: 16px;
