@@ -167,6 +167,8 @@ a {
     color: #1b1c21;
     font-weight: 500;
     width: fit-content;
+    background: none;
+    border: none;
 }
 
 .footer {
