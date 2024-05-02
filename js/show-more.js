@@ -14,8 +14,9 @@ function hideExtraBrands() {
         }
     }
 }
-
-document.addEventListener('DOMContentLoaded', hideExtraBrands);
+if (window.innerWidth >= 768) {
+    document.addEventListener('DOMContentLoaded', hideExtraBrands);
+}
 
 const showMoreButton = document.querySelector('.button-spoiler');
 

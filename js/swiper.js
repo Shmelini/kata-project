@@ -3,7 +3,8 @@ if (innerWidth < 768) {
         direction: 'horizontal',
         loop: false,
         pagination: {
-            el: '.swiper-brands__pagination'
+            el: '.swiper-brands__pagination',
+            clickable: true
         },
         slidesPerView: 'auto',
         spaceBetween: 16,
