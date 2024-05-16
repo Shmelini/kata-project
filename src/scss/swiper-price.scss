@@ -1,0 +1,284 @@
+@media (min-width: 320px) {
+  .swiper-price {
+    padding: 16px 16px 0 16px;
+
+    &__desc {
+      display: none;
+    }
+
+    &__swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      width: 260px;
+      height: 200px;
+      background: #FFF;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+
+      &::before {
+        content: 'Ремонтные услуги';
+        color: $secondary-text;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    &__price {
+      display: flex;
+      flex-direction: column;
+
+      &::before {
+        content: 'Цена';
+        color: $secondary-text;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    &__time-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &__time {
+      display: flex;
+      flex-direction: column;
+
+      &::before {
+        content: 'Срок';
+        color: $secondary-text;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      width: 119px;
+      height: 32px;
+      color: #FFF;
+      font-size: 12px;
+      font-weight: 500;
+      background-color: $button;
+      border-radius: 16px;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .price-section__nds {
+    width: 100%;
+    padding: 16px;
+
+    &-text {
+      margin-bottom: 16px;
+      color: $primary-text;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    &-link {
+      color: $primary-text;
+      font-size: 16px;
+      font-weight: 500;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    svg {
+      transform: translateY(7px);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-price {
+    padding: 16px;
+
+    &__desc {
+      display: flex;
+      color: $secondary-text;
+      padding: 0 16px 16px 16px;
+      font-size: 14px;
+      font-weight: 500;
+
+      &-name {
+        width: 348px;
+        margin-right: auto;
+      }
+
+      &-price {
+        width: 74px;
+        margin-right: 22px;
+      }
+
+      &-time {
+        width: 220px;
+      }
+    }
+
+    &__swiper-wrapper {
+      padding: 0 16px;
+      flex-direction: column;
+      width: auto;
+      background: #FFF;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    &__swiper-slide {
+      display: flex;
+      flex-direction: row;
+      justify-content: unset;
+      align-items: center;
+      padding: 16px 0;
+      width: 100%;
+      height: fit-content;
+      background: none;
+      border-radius: 0px;
+      font-size: 14px;
+      font-weight: 400;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #EAEAEA;
+      }
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      width: 348px;
+      margin-right: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__price {
+      display: flex;
+      flex-direction: column;
+      width: 74px;
+      margin-right: 22px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__time-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__time {
+      display: flex;
+      flex-direction: column;
+      width: 81px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      width: 119px;
+      height: 32px;
+      color: #FFF;
+      background-color: $button;
+      border-radius: 16px;
+
+    }
+  }
+
+  .price-section__nds {
+    width: 421px;
+    padding: 24px;
+
+    &-text {
+      color: $primary-text;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    &-link {
+      color: $primary-text;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .swiper-price {
+    padding: 32px;
+
+    &__desc {
+      padding: 0 32px 32px 32px;
+
+      &-price {
+        margin-right: 153px;
+      }
+    }
+
+    &__swiper-wrapper {
+      padding: 0 32px;
+    }
+
+    &__swiper-slide {
+      padding: 23px 0;
+
+    }
+
+    &__price {
+      margin-right: 153px;
+    }
+  }
+
+  .price-section__nds {
+    width: 421px;
+    padding: 32px;
+
+    &-text {
+      color: $primary-text;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    &-link {
+      color: $primary-text;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,355 @@
+@font-face {
+    font-family: TTLakes;
+    font-weight: 400;
+    src: url(../fonts/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: TTLakes;
+    font-weight: 500;
+    src: url(../fonts/TTLakes-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: TTLakes;
+    font-weight: 700;
+    src: url(../fonts/TTLakes-Bold.woff) format("woff");
+}
+
+body {
+    font-family: TTLakes;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: #f8f8f8;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 40px;
+        background-color: $dark-cyan;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        margin-right: 12px;
+    }
+}
+
+
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.text--gray {
+    color: $secondary-text;
+}
+
+.container {
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: $button;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+
+
+.services {
+
+    &__links-group {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__list-item {
+        font-weight: 400;
+        font-size: 16px;
+        color: $secondary-text;
+        cursor: pointer;
+        white-space: nowrap;
+
+        &--active {
+            border: 2px solid $cyan;
+            border-radius: 6px;
+            background-color: #ffffff;
+        }
+    }
+
+    &__text:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $primary-text;
+        font-weight: 500;
+        width: fit-content;
+        background: none;
+        border: none;
+    }
+
+
+}
+
+@media (min-width: 320px) {
+    section {
+        padding-top: 24px;
+    }
+
+    .title {
+        margin-bottom: 24px;
+
+        &::before {
+            margin-right: 12px;
+        }
+    }
+
+    .services__list {
+        display: flex;
+        overflow-y: scroll;
+
+        &-item {
+            padding: 8px 9px;
+        }
+    }
+
+    .blur-block {
+        position: relative;
+        margin: 0 16px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 24px;
+            background: linear-gradient(270deg,
+                    #f8f8f8 16.84%,
+                    rgba(248, 248, 248, 0.0001) 100%);
+        }
+    }
+
+    .services__tab-text {
+        margin-bottom: 16px;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services__text:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+
+        &:not(:first-of-type) {
+            padding-top: 32px;
+        }
+    }
+
+    .title::before {
+        margin-right: 20px;
+    }
+
+    .services {
+
+        &__content {
+            gap: 32px;
+            padding: 0 24px;
+        }
+
+        &__tab {
+            display: flex;
+            justify-content: space-between;
+
+            &-img {
+                width: 360px;
+                height: 100%;
+                border-radius: 10px;
+            }
+
+            &-text {
+                width: 50%;
+                margin-bottom: 10px;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        &__text:not(:first-child) {
+            display: block;
+        }
+    }
+
+
+
+    .blur-block {
+        position: relative;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1120px) {
+    section {
+
+        &:not(:first-of-type) {
+            padding-top: 50px;
+        }
+
+        &:first-of-type {
+            padding-top: 42px;
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .container {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .services {
+
+        &__head {
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 24px;
+            padding-right: 34px;
+        }
+
+        &__links-group {
+            display: flex;
+            gap: 32px;
+        }
+
+        &__link-text {
+            font-weight: 500;
+        }
+
+        &__content {
+            gap: 7px;
+            padding: 0 34px 49px 34px;
+        }
+
+        &__list {
+            flex-wrap: wrap;
+            overflow-y: auto;
+
+            &-item {
+                padding: 8px 18px;
+            }
+        }
+
+        &__tab {
+            align-items: start;
+            justify-content: space-between;
+            gap: 34px;
+
+            &-text {
+                margin-top: 9px;
+                margin-bottom: 0;
+            }
+
+            &-img {
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+
+    .title {
+        margin-bottom: 0;
+
+        &::before {
+            margin-right: 28px;
+        }
+    }
+
+    .blur-block {
+        justify-content: start;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .footer {
+        padding-left: 306px;
+
+        &__text {
+
+            &:not(:first-child):not(:last-child) {
+                text-align: center;
+            }
+
+            &:last-child {
+                width: 330px;
+                text-align: right;
+            }
+        }
+    }
+
+
+}
