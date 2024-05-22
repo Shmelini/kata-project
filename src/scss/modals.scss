@@ -8,11 +8,11 @@
     height: 100vh;
     background-color: #FFF;
     z-index: 10;
+    transform: translateY(-1000%);
     transition: transform 0.2s;
-    transform: translateX(1000%);
 
     &--opened {
-      transform: translateX(0);
+      transform: translateY(0);
     }
 
     &__blur {

@@ -1,11 +1,15 @@
 const callBtns = document.querySelectorAll('.button-call')
 const callModal = document.querySelector('.modal-call')
+const mobileMenu = document.querySelector('.mobile-menu')
 
 callBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     e.preventDefault()
     callModal.classList.add('modal--opened')
     document.body.style.overflowY = 'hidden'
+    if (!mobileMenu.classList.contains('mobile-menu--closed')) {
+      mobileMenu.classList.add('mobile-menu--closed')
+    }
   })
 })
 
@@ -17,6 +21,9 @@ feedbackBtns.forEach((btn) => {
     e.preventDefault()
     feedbackModal.classList.add('modal--opened')
     document.body.style.overflowY = 'hidden'
+    if (!mobileMenu.classList.contains('mobile-menu--closed')) {
+      mobileMenu.classList.add('mobile-menu--closed')
+    }
   })
 })
 

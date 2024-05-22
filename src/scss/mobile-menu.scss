@@ -14,7 +14,7 @@
   transform: translateX(0);
 
   &--closed {
-    transform: translateX(-1500px);
+    transform: translateX(-2500px);
 
   }
 
@@ -174,7 +174,7 @@
 
 @media (min-width: 1400px) {
   .mobile-menu {
-    position: static;
+    position: fixed;
     width: 306px;
 
     &__blur {

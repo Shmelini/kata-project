@@ -2,6 +2,7 @@ body {
     font-family: TTLakes;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 section {
@@ -176,7 +177,7 @@ a {
 @media (min-width: 768px) {
     section {
 
-        &:not(:first-of-type) {
+        &:not(:first-child) {
             padding-top: 32px;
         }
     }
@@ -230,24 +231,22 @@ a {
 @media (min-width: 1120px) {
     section {
 
-        &:not(:first-of-type) {
+        &:not(:first-child) {
             padding-top: 50px;
         }
 
-        &:first-of-type {
+        &:first-child {
             padding-top: 42px;
         }
     }
 
     .main {
         display: flex;
-        justify-content: center;
         padding-top: 0;
     }
 
     .container {
-        width: 1120px;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .services {
@@ -316,22 +315,15 @@ a {
             display: none;
         }
     }
+}
 
-    .footer {
-        padding-left: 306px;
-
-        &__text {
-
-            &:not(:first-child):not(:last-child) {
-                text-align: center;
-            }
-
-            &:last-child {
-                width: 330px;
-                text-align: right;
-            }
-        }
+@media (min-width: 1400px) {
+    .container {
+        width: 1120px;
+        margin: 0 auto;
     }
 
-
+    .sections-container {
+        margin-left: 306px;
+    }
 }
