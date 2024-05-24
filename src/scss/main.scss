@@ -318,6 +318,11 @@ a {
 }
 
 @media (min-width: 1400px) {
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
     .container {
         width: 1120px;
         margin: 0 auto;
