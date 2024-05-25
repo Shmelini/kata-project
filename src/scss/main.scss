@@ -228,7 +228,7 @@ a {
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1400px) {
     section {
 
         &:not(:first-child) {
@@ -329,7 +329,13 @@ a {
         margin: 0 auto;
     }
 
-    // .sections-container {
-    //     margin-left: 306px;
-    // }
+    .sections-container {
+        margin-left: 330px;
+    }
+}
+
+@media (min-width: 1740px) {
+    .sections-container {
+        margin-left: 0;
+    }
 }
