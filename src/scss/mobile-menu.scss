@@ -2,10 +2,6 @@
   color: $primary-text;
 }
 
-.mobile-menu__block {
-  width: 306px;
-}
-
 .mobile-menu {
   overflow: hidden;
   display: flex;
@@ -175,6 +171,10 @@
 }
 
 @media (min-width: 1400px) {
+  .mobile-menu__block {
+    width: 306px;
+  }
+
   .mobile-menu {
     position: fixed;
     width: 306px;
