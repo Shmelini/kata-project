@@ -1159,9 +1159,6 @@ a {
 .link {
   color: #1B1C21; }
 
-.mobile-menu__block {
-  width: 306px; }
-
 .mobile-menu {
   overflow: hidden;
   display: flex;
@@ -1273,6 +1270,8 @@ a {
       background: rgba(255, 255, 255, 0.6); } }
 
 @media (min-width: 1400px) {
+  .mobile-menu__block {
+    width: 306px; }
   .mobile-menu {
     position: fixed;
     width: 306px; }
