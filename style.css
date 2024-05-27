@@ -1043,9 +1043,7 @@ a {
     justify-content: center; }
   .container {
     width: 1120px;
-    margin: 0 auto; }
-  .sections-container {
-    margin-left: 330px; } }
+    margin: 0 auto; } }
 
 @media (min-width: 1740px) {
   .sections-container {
@@ -1161,12 +1159,13 @@ a {
 .link {
   color: #1B1C21; }
 
+.mobile-menu__block {
+  width: 306px; }
+
 .mobile-menu {
   overflow: hidden;
   display: flex;
   position: absolute;
-  left: 0;
-  top: 0;
   z-index: 2;
   width: 100vw;
   transition: transform 0.2s;
