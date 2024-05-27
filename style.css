@@ -1163,6 +1163,8 @@ a {
   overflow: hidden;
   display: flex;
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: 2;
   width: 100vw;
   transition: transform 0.2s;
@@ -1274,7 +1276,9 @@ a {
     width: 306px; }
   .mobile-menu {
     position: fixed;
-    width: 306px; }
+    width: 306px;
+    left: auto;
+    top: auto; }
     .mobile-menu__blur {
       display: none; }
     .mobile-menu__header {
