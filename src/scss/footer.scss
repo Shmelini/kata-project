@@ -62,6 +62,13 @@
 
 @media (min-width: 1400px) {
   .footer {
+    display: flex;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 306px;
+    }
 
     &__text {
 
