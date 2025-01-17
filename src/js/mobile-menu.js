@@ -1,4 +1,4 @@
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('.mobile-menu__block');
 const burgerOpen = document.querySelector('.header__burger-button');
 const burgerClose = mobileMenu.querySelector('.burger-button--close');
 

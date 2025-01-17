@@ -1,6 +1,6 @@
 const callBtns = document.querySelectorAll('.button-call')
 const callModal = document.querySelector('.modal-call')
-const mobileMenu = document.querySelector('.mobile-menu')
+const mobileMenu = document.querySelector('.mobile-menu__block')
 
 callBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
@@ -27,7 +27,7 @@ feedbackBtns.forEach((btn) => {
   })
 })
 
-const modalCloseBtns = document.querySelectorAll('.modal__button--close')
+const modalCloseBtns = document.querySelectorAll('.modal__button-close')
 
 modalCloseBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
