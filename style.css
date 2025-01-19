@@ -1659,7 +1659,7 @@ a {
       transform: translateY(0); }
     .modal__blur {
       display: none; }
-    .modal__button--close {
+    .modal__button-close {
       margin: 0 0 32px 16px; }
     .modal__form {
       display: flex;
@@ -1716,8 +1716,9 @@ a {
       left: -80px;
       display: flex;
       z-index: 11; }
-    .modal__button--close {
-      margin: 0 0 32px 16px; }
+    .modal__button-close {
+      position: absolute;
+      left: -70px; }
     .modal__form {
       display: flex;
       flex-direction: column;
