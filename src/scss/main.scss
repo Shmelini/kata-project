@@ -90,7 +90,6 @@ a {
         font-weight: 400;
         font-size: 16px;
         color: $secondary-text;
-        cursor: pointer;
         white-space: nowrap;
 
         &--active {
@@ -146,6 +145,20 @@ a {
         margin-bottom: 24px;
         display: flex;
         justify-content: center;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -13px;
+            right: 0;
+            height: 100%;
+            width: 24px;
+            background: linear-gradient(270deg,
+                    #f8f8f8 16.84%,
+                    rgba(248, 248, 248, 0.0001) 100%);
+            transform: rotate(180deg);
+        }
 
         &::after {
             content: "";

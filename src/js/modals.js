@@ -36,3 +36,12 @@ modalCloseBtns.forEach((btn) => {
     btn.parentNode.classList.remove('modal--opened')
   })
 })
+
+const modalBlurs = document.querySelectorAll('.modal__blur')
+
+modalBlurs.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.body.style.overflowY = 'scroll'
+    btn.parentNode.classList.remove('modal--opened')
+  })
+})

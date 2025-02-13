@@ -11,3 +11,10 @@ burgerClose.addEventListener('click', () => {
   mobileMenu.classList.add('mobile-menu--closed');
   document.body.style.overflow = 'scroll'
 });
+
+const mobileBlur = document.querySelector('.mobile-menu__blur')
+
+mobileBlur.addEventListener('click', () => {
+  document.body.style.overflow = 'scroll'
+  mobileBlur.parentNode.classList.add('mobile-menu--closed')
+})
