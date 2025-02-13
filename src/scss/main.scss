@@ -130,9 +130,18 @@ a {
         }
     }
 
+    .services__nav {
+        overflow-y: scroll;
+    }
+
     .services__list {
         display: flex;
         overflow-y: scroll;
+        padding-right: 50px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         &-item {
             padding: 8px 9px;
@@ -288,9 +297,14 @@ a {
             padding: 0 34px 49px 34px;
         }
 
+        &__nav {
+            overflow-y: auto;
+        }
+
         &__list {
             flex-wrap: wrap;
             overflow-y: auto;
+            padding-right: 0;
 
             &-item {
                 padding: 8px 18px;
@@ -324,6 +338,10 @@ a {
 
     .blur-block {
         justify-content: start;
+
+        &::before {
+            display: none;
+        }
 
         &::after {
             display: none;
